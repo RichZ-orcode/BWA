@@ -143,7 +143,7 @@ enemy_library = {
         width: "130px",
         full_hp: 12,
         attacks: [
-            new Attack("Puffy Punch",0.5,1),
+            new Attack("Puffy Punch",0.5,1,{ tilesmash: 3),
             new Attack("Creepy Gaze",0.5,1,{ tilealter: 6 })
         ],
         onapproach: function() {
@@ -174,8 +174,9 @@ enemy_library = {
         width: "240px",
         full_hp: 25,
         attacks: [
-            new Attack("Teethe",0.8,2,{ bleed: 2 }),
-            new Attack("Temper Tantrum",0.2,2,{ tilesmash: 3, stun: 2  })
+            new Attack("Teethe",0.3,2,{ bleed: 2 }),
+            new Attack("Temper Tantrum",0.2,2,{ tilesmash: 3, stun: 6  })
+            new Attack("Punch",0.5,2)
         ],
         onapproach: function() {
             View.message_queue = [
